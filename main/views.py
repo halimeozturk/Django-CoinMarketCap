@@ -30,6 +30,4 @@ def get_main(request):
             }
         )
 
-    # import ipdb; ipdb.set_trace()
-
     return JsonResponse(data, safe=False)

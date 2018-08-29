@@ -2,8 +2,6 @@ from django.core.management.base import BaseCommand, CommandError
 from main.models import Cryptocurrency,Value
 from django.shortcuts import render
 from ._api import *
-import json
-from decimal import *
 
 class Command(BaseCommand):
 
@@ -30,5 +28,3 @@ class Command(BaseCommand):
                 market_cap = Decimal(usd['market_cap']).quantize(Decimal('.0')),
                 last_updated = usd['last_updated']
             )
-            
-

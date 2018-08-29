@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.db import models
-from decimal import *
-
-
 
 class Cryptocurrency(models.Model):
     name = models.CharField(null=True, max_length=25)
@@ -24,10 +20,3 @@ class Value(models.Model):
 
     def __str__(self):
         return self.cryptocurrency.name
-
-    
-
-
-
-
-

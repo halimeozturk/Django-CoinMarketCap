@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from main.models import Cryptocurrency,Value
 from django.shortcuts import render
+from decimal import *
 from ._api import *
 
 class Command(BaseCommand):
